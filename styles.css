@@ -1,0 +1,27 @@
+/* element */
+body {
+  color: grey;
+}
+
+/* class */
+.purple {
+  color: purple;
+}
+
+/* id */
+#brown {
+  color: brown;
+}
+
+/* 
+
+specifying
+div .container {
+  text-align: left;
+}
+
+happening to all of them
+h1, h2, p{
+}
+
+*/
