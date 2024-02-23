@@ -32,13 +32,27 @@ body {
 .article {
   display: flex;
   flex-direction: column;
-  margin: 0 5rem;
+  gap: 2rem;
+  margin: 0 8rem;
+}
+
+.article__section {
+  width: 100%;
+}
+
+.article__img {
+  width: 100%;
 }
 
 .boop {
   display: flex;
   flex-direction: column;
-  margin: 0 5rem;
+  margin: 1rem 8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
 }
 
 /* element */
