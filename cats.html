@@ -23,17 +23,27 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7def7ec5a6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <nav class="nav">
       <ul class="nav__nav-list">
         <li class="nav__nav-list-item">
-          <a class="nav__nav-list-link">Posts</a>
+          <a class="nav__nav-list-link"><i class="fa-solid fa-paw"></i>Posts</a>
         </li>
         <li class="nav__nav-list-item">
-          <a class="nav__nav-list-link">Contact</a>
+          <a class="nav__nav-list-link"
+            ><i class="fa-solid fa-paw"></i>Contact</a
+          >
         </li>
       </ul>
       <div>
@@ -44,7 +54,7 @@
     <article class="article">
       <section class="article__section top">
         <h1 class="article__title">
-          There are a million reasons why cats are awesome...
+          There are a million reasons why cats are awesome... but here are 5:
         </h1>
         <p class="article__date">Last Updated: February 23, 2024</p>
         <img
@@ -52,7 +62,7 @@
           src="https://catinaflat.blog/wp-content/uploads/2022/08/calico_cat.jpg"
           alt="A calico cat lounging"
         />
-        <h2 class="article__subtitle">But here are 5:</h2>
+        <!-- <h2 class="article__subtitle">But here are 5:</h2> -->
       </section>
 
       <section class="article__section part">
@@ -114,20 +124,19 @@
         </h3>
         <p class="article__p">
           Just like people do. Not all of them are mean or feisty like in the
-          movies.<br />Here are some stats for cats I've gotten to know
-          personally:
+          movies. Here are some stats for cats I've gotten to know personally:
         </p>
 
         <table class="table">
           <tr class="table__tr">
-            <td class="table__td">
+            <td class="table__td table-top">
               <b>Personality</b>
             </td>
-            <td><b>Cat Count</b></td>
+            <td class="table__td table-top"><b>Cat Count</b></td>
           </tr>
           <tr class="table__tr">
             <td class="table__td">Super Friendly</td>
-            <td>4</td>
+            <td class="table__td">4</td>
           </tr>
           <tr class="table__tr">
             <td class="table__td">Pretty Aloof</td>

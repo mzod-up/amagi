@@ -20,25 +20,52 @@ body {
     rgb(224, 112, 130),
     rgb(132, 132, 211)
   );
+  box-shadow: rgba(66, 66, 66, 0.25) 0.1rem 0.1rem 0.6rem;
 }
 
 .nav__nav-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.2rem;
 }
 
 .nav__nav-list-item {
   list-style: none;
   font-size: 1.2rem;
-  font-weight: 700;
-  color: rgb(248, 248, 248);
+  font-weight: 500;
+  letter-spacing: 0.06rem;
+  color: rgb(255, 232, 232);
+}
+
+.nav__nav-list-link {
+  cursor: pointer;
+}
+
+.nav__nav-list-link i {
+  /* display: inline; */
+  margin-right: 0.2rem;
+  opacity: 0;
+  transition: -webkit-transform 200ms, opacity 200ms;
+  transform: translateZ(0) translateY(-3rem);
+  -webkit-transform: translateZ(0) translateY(-3rem);
+}
+
+.nav__nav-list-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav__nav-list-link:hover i {
+  opacity: 1;
+  transition: -webkit-transform 200ms, opacity 400ms;
+  transform: translateZ(0) translateY(0); /* added this cause there was a warning */
+  -webkit-transform: translateZ(0) translateY(0);
 }
 
 .nav__logo {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
   color: rgb(248, 248, 248);
 }
 
@@ -64,17 +91,35 @@ body {
   width: 80%;
 }
 
-.article__section:nth-child(2n) {
+.article__section:nth-child(2n):hover {
   /* background-color: rgb(224, 112, 130); */
-  /* border: 1px solid rgb(224, 112, 130);
-  border-radius: 2rem; */
+  outline: 4px solid rgb(224, 112, 130);
+  outline-style: dotted;
+  border-radius: 2rem;
+}
+
+.article__section:nth-child(2n) a {
+  color: rgb(168, 80, 95);
+}
+
+.article__section:nth-child(2n) a:hover {
+  color: rgb(134, 64, 76);
 }
 
 /* so the top section doesn't have the border */
-.article__section:nth-child(2n-1):not(.top) {
+.article__section:nth-child(2n-1):not(.top):hover {
   /* background-color: rgb(132, 132, 211); */
-  /* border: 1px solid rgb(132, 132, 211);
-  border-radius: 2rem; */
+  outline: 4px solid rgb(132, 132, 211);
+  outline-style: dotted;
+  border-radius: 2rem;
+}
+
+.article__section:nth-child(2n-1) a {
+  color: rgb(132, 132, 211);
+}
+
+.article__section:nth-child(2n-1) a:hover {
+  color: rgb(101, 101, 160);
 }
 
 .article__date {
@@ -90,11 +135,11 @@ body {
   color: rgb(24, 24, 24);
 }
 
-.article__subtitle {
+/* .article__subtitle {
   font-size: 2rem;
   margin-top: 1rem;
   color: rgb(24, 24, 24);
-}
+} */
 
 .article__subsection-heading {
   font-size: 1.5rem;
@@ -118,7 +163,8 @@ body {
 
 .article__list {
   background-image: url(https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg);
-  background-color: rgb(238, 198, 146); /* fallback color */
+  background-color: rgb(238, 198, 146); /* fallback bg color */
+  box-shadow: rgba(66, 66, 66, 0.5) 0.2rem 0.2rem 0.4rem;
   padding: 1.5rem 3rem 2rem 3rem;
   text-align: left;
   list-style: none;
@@ -132,6 +178,28 @@ body {
   margin-bottom: 1rem;
 }
 
+input[type="checkbox"] {
+  accent-color: rgb(168, 80, 95);
+}
+
+.table {
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+
+.table__tr {
+  border: 2px solid rgb(132, 132, 211);
+}
+
+.table__td {
+  border: 2px solid rgb(132, 132, 211);
+  padding: 0.5rem;
+}
+
+.table-top {
+  background-color: rgb(193, 193, 240);
+}
+
 .check {
   margin-right: 0.25rem;
 }
@@ -143,14 +211,33 @@ body {
 }
 
 .boop__btn {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
   height: 3rem;
-  width: 4rem;
+  width: 5rem;
+  margin-top: 0.5rem;
+  border: 0;
+  border-radius: 1rem;
+  background-color: rgb(199, 199, 230);
+}
+
+.boop__btn:hover {
+  background-color: rgb(218, 138, 151);
+}
+
+.boop__btn:active {
+  background-color: rgb(189, 87, 104);
 }
 
 .footer {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+}
+
+.footer a {
+  color: rgb(132, 132, 211);
 }
 
 /* element */
