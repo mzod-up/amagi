@@ -33,9 +33,9 @@ body {
 .nav__nav-list-item {
   list-style: none;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 0.06rem;
-  color: rgb(255, 232, 232);
+  color: rgb(255, 240, 240);
 }
 
 .nav__nav-list-link {
@@ -149,6 +149,7 @@ body {
 .article__p {
   width: 75%;
   color: rgb(24, 24, 24);
+  font-size: 1.1rem;
 }
 
 .article__img {
@@ -200,6 +201,10 @@ input[type="checkbox"] {
   background-color: rgb(193, 193, 240);
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 .check {
   margin-right: 0.25rem;
 }
@@ -238,6 +243,10 @@ input[type="checkbox"] {
 
 .footer a {
   color: rgb(132, 132, 211);
+}
+
+.footer a:hover {
+  color: rgb(100, 100, 160);
 }
 
 /* element */
