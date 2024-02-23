@@ -27,23 +27,25 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="nav">
+      <ul class="nav__nav-list">
+        <li class="nav__nav-list-item">
+          <a class="nav__nav-list-link">Posts</a>
+        </li>
+        <li class="nav__nav-list-item">
+          <a class="nav__nav-list-link">Contact</a>
+        </li>
+      </ul>
       <div>
-        <ul>
-          <li>
-            <a>Posts</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-        </ul>
+        <span class="nav__logo">Logo goes here</span>
       </div>
     </nav>
 
-    <div>
+    <article class="article">
       <p>Last Updated: February 21, 2024</p>
       <h1>There are a million reasons why cats are awesome</h1>
       <img
+        class="article__img"
         src="https://catinaflat.blog/wp-content/uploads/2022/08/calico_cat.jpg"
         alt="A calico cat lounging"
       />
@@ -52,7 +54,7 @@
       <br />
 
       <h3>1. They're cool little guys.</h3>
-      <p>
+      <p class="article__p">
         They just look cool. Check out
         <a href="https://twitter.com/unicouniuni3"><b>Uni</b></a
         >. That perfect mouth shape. <i>*Chef's kiss*</i> <br /><br />
@@ -65,7 +67,7 @@
       <br />
 
       <h3>2. They're independent.</h3>
-      <p class="purple">
+      <p class="article__p">
         They like to go out on their own adventures sometimes, so you don't
         really have to worry if your cat goes missing for a little while.
         Besides,
@@ -83,8 +85,8 @@
 
       <br />
 
-      <h3 id="brown">3. They're thoughtful.</h3>
-      <p>
+      <h3>3. They're thoughtful.</h3>
+      <p class="article__p">
         Sometimes they leave you presents (and who doesn't like presents!)
         including but not limited to:
       </p>
@@ -95,13 +97,13 @@
         <li>Your neighbor's favorite socks</li>
       </ul>
 
-      <p>
+      <p class="article__p">
         <i>Mine gave me a squid once. Don't know how he got a hold of that.</i>
       </p>
       <br />
 
       <h3>4. They all have different personalities.</h3>
-      <p>
+      <p class="article__p">
         Just like people do. Not all of them are mean or feisty like in the
         movies.<br />Here are some stats for cats I've gotten to know
         personally:
@@ -119,7 +121,7 @@
           <td>4</td>
         </tr>
         <tr>
-          <td style="padding: 5px; border: 1px solid grey">Pretty Aloof</td>
+          <td>Pretty Aloof</td>
           <td>2</td>
         </tr>
         <tr>
@@ -134,7 +136,7 @@
       <br /><br />
 
       <h3>5. They're silly.</h3>
-      <p>
+      <p class="article__p">
         They're super curious and sometimes it makes them do silly things.<br />There
         are lots of videos of cats being silly. YouTube <b>loves</b> them.
       </p>
@@ -146,10 +148,11 @@
       />
 
       <br /><br /><br />
-
+    </article>
+    <section class="boop">
       <p>Show cats a little more love. Boop that snoot.</p>
       <button>Boop</button>
-    </div>
+    </section>
 
     <footer>
       <a href="https://github.com/mzod-up/amagi">© 2024 mzod-up</a>

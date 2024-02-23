@@ -1,20 +1,62 @@
-/* element */
-body {
-  color: grey;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: rgb(255, 248, 237);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.nav__nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav__nav-list-item {
+  list-style: none;
+  color: rgb(151, 151, 151);
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5rem;
+}
+
+.boop {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5rem;
+}
+
+/* element */
+/* body {
+  color: grey;
+} */
 
 /* class */
-.purple {
+/* .purple {
   color: purple;
-}
+} */
 
 /* id */
-#brown {
+/* #brown {
   color: brown;
-}
+} */
 
 /* 
-
 specifying
 div .container {
   text-align: left;
@@ -22,6 +64,4 @@ div .container {
 
 happening to all of them
 h1, h2, p{
-}
-
-*/
+} */
