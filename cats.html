@@ -37,18 +37,18 @@
         </li>
       </ul>
       <div>
-        <span class="nav__logo">Logo goes here</span>
+        <span class="nav__logo">Logo Goes Here</span>
       </div>
     </nav>
 
     <article class="article">
-      <section class="article__section">
+      <section class="article__section top">
         <h1 class="article__title">
-          There are a million reasons why cats are awesome
+          There are a million reasons why cats are awesome...
         </h1>
         <p class="article__date">Last Updated: February 23, 2024</p>
         <img
-          class="article__img"
+          class="article__img main-img"
           src="https://catinaflat.blog/wp-content/uploads/2022/08/calico_cat.jpg"
           alt="A calico cat lounging"
         />
@@ -56,11 +56,13 @@
       </section>
 
       <section class="article__section part">
-        <h3>1. They're cool little guys.</h3>
+        <h3 class="article__subsection-heading">
+          1. They're cool little guys.
+        </h3>
         <p class="article__p">
           They just look cool. Check out
-          <a href="https://twitter.com/unicouniuni3"><b>Uni</b></a
-          >. That perfect mouth shape. <i>*Chef's kiss*</i>
+          <a href="https://twitter.com/unicouniuni3">Uni</a>. That perfect mouth
+          shape. <i>*Chef's kiss*</i>
         </p>
         <img
           class="article__img"
@@ -70,7 +72,7 @@
       </section>
 
       <section class="article__section part">
-        <h3>2. They're independent.</h3>
+        <h3 class="article__subsection-heading">2. They're independent.</h3>
         <p class="article__p">
           They like to go out on their own adventures sometimes, so you don't
           really have to worry if your cat goes missing for a little while.
@@ -87,60 +89,62 @@
       </section>
 
       <section class="article__section part">
-        <h3>3. They're thoughtful.</h3>
-        <p class="article__p">
-          Sometimes they leave you presents (and who doesn't like presents!)
-          including but not limited to:
-        </p>
-        <ul>
-          <li>Mice</li>
-          <li>Lizards</li>
-          <li>Birds</li>
-          <li>Your neighbor's favorite socks</li>
-        </ul>
+        <h3 class="article__subsection-heading">3. They're thoughtful.</h3>
 
         <p class="article__p">
+          Sometimes they leave you presents, and who doesn't like presents?
           <i
-            >Mine gave me a squid once. Don't know how he got a hold of that.</i
+            >Mine gave me a squid once... Don't know how he got a hold of
+            that.</i
           >
         </p>
+
+        <ul class="article__list">
+          <li>Today's presents:</li>
+          <li><input type="checkbox" class="check" />Mouse</li>
+          <li><input type="checkbox" class="check" />Lizard</li>
+          <li><input type="checkbox" class="check" />Bird</li>
+          <li><input type="checkbox" class="check" />Neighbor's sock</li>
+        </ul>
       </section>
 
       <section class="article__section part">
-        <h3>4. They all have different personalities.</h3>
+        <h3 class="article__subsection-heading">
+          4. They all have different personalities.
+        </h3>
         <p class="article__p">
           Just like people do. Not all of them are mean or feisty like in the
           movies.<br />Here are some stats for cats I've gotten to know
           personally:
         </p>
 
-        <table>
-          <tr>
-            <td>
+        <table class="table">
+          <tr class="table__tr">
+            <td class="table__td">
               <b>Personality</b>
             </td>
             <td><b>Cat Count</b></td>
           </tr>
-          <tr>
-            <td>Super Friendly</td>
+          <tr class="table__tr">
+            <td class="table__td">Super Friendly</td>
             <td>4</td>
           </tr>
-          <tr>
-            <td>Pretty Aloof</td>
-            <td>2</td>
+          <tr class="table__tr">
+            <td class="table__td">Pretty Aloof</td>
+            <td class="table__td">2</td>
           </tr>
-          <tr>
-            <td>Literally Hates People</td>
-            <td>
+          <tr class="table__tr">
+            <td class="table__td"><i>Literally Hates People</i></td>
+            <td class="table__td">
               1,
-              <span>yes Matrix this is about you</span>
+              <span class="strikethrough">yes Matrix this is about you</span>
             </td>
           </tr>
         </table>
       </section>
 
       <section class="article__section part">
-        <h3>5. They're silly.</h3>
+        <h3 class="article__subsection-heading">5. They're silly.</h3>
         <p class="article__p">
           They're super curious and sometimes it makes them do silly things.
           There are lots of videos of cats being silly. YouTube
@@ -155,7 +159,7 @@
     </article>
     <section class="boop">
       <p>Show cats a little more love. Boop that snoot.</p>
-      <button>Boop</button>
+      <button class="boop__btn">Boop</button>
     </section>
 
     <footer class="footer">

@@ -26,32 +26,55 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nav__nav-list-item {
   list-style: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(248, 248, 248);
+}
+
+.nav__logo {
+  font-size: 1.2rem;
+  font-weight: 700;
   color: rgb(248, 248, 248);
 }
 
 .article {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  margin: 2rem 8rem;
+  padding: 2rem 8rem;
 }
 
-.article__section:not(.part) {
+.article__section {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  padding: 2rem;
   align-items: center;
   text-align: center;
 }
 
+.article__section:not(.top) {
+  width: 80%;
+}
+
 .article__section:nth-child(2n) {
-  background-color: rgb(209, 209, 209);
+  /* background-color: rgb(224, 112, 130); */
+  /* border: 1px solid rgb(224, 112, 130);
+  border-radius: 2rem; */
+}
+
+/* so the top section doesn't have the border */
+.article__section:nth-child(2n-1):not(.top) {
+  /* background-color: rgb(132, 132, 211); */
+  /* border: 1px solid rgb(132, 132, 211);
+  border-radius: 2rem; */
 }
 
 .article__date {
@@ -63,14 +86,54 @@ body {
 .article__title {
   font-size: 4rem;
   line-height: 3.4rem;
+  margin-bottom: 1rem;
   color: rgb(24, 24, 24);
 }
 
 .article__subtitle {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: rgb(24, 24, 24);
+}
+
+.article__subsection-heading {
+  font-size: 1.5rem;
+  color: rgb(24, 24, 24);
+}
+
+.article__p {
+  width: 75%;
+  color: rgb(24, 24, 24);
 }
 
 .article__img {
   width: 100%;
+}
+
+.article__img:not(.main-img) {
+  width: 65%;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.article__list {
+  background-image: url(https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg);
+  background-color: rgb(238, 198, 146); /* fallback color */
+  padding: 1.5rem 3rem 2rem 3rem;
+  text-align: left;
+  list-style: none;
+  font-weight: 200;
+  margin-top: 2rem;
+}
+
+.article__list li:nth-child(1) {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.check {
+  margin-right: 0.25rem;
 }
 
 .boop {
@@ -79,9 +142,15 @@ body {
   margin: 1rem 8rem;
 }
 
+.boop__btn {
+  height: 3rem;
+  width: 4rem;
+}
+
 .footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 /* element */
@@ -108,3 +177,17 @@ div .container {
 happening to all of them
 h1, h2, p{
 } */
+
+@media screen and (max-width: 800px) {
+  .article {
+    padding: 2rem 4rem;
+  }
+
+  .article__p {
+    width: 100%;
+  }
+
+  .article__section:not(.top) {
+    width: 100%;
+  }
+}
