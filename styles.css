@@ -27,14 +27,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 2.2rem;
 }
 
 .nav__nav-list-item {
   list-style: none;
-  font-size: 1.2rem;
-  font-weight: 300;
-  letter-spacing: 0.06rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
   color: rgb(255, 240, 240);
 }
 
@@ -129,7 +130,7 @@ body {
 }
 
 .article__title {
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 3.4rem;
   margin-bottom: 1rem;
   color: rgb(24, 24, 24);
@@ -217,7 +218,8 @@ input[type="checkbox"] {
 
 .boop__btn {
   font-family: "Fredoka", sans-serif;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
   cursor: pointer;
   height: 3rem;
   width: 5rem;
@@ -238,7 +240,7 @@ input[type="checkbox"] {
 .footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer a {
@@ -247,6 +249,20 @@ input[type="checkbox"] {
 
 .footer a:hover {
   color: rgb(100, 100, 160);
+}
+
+@media screen and (max-width: 800px) {
+  .article {
+    padding: 2rem 4rem;
+  }
+
+  .article__p {
+    width: 100%;
+  }
+
+  .article__section:not(.top) {
+    width: 100%;
+  }
 }
 
 /* element */
@@ -273,17 +289,3 @@ div .container {
 happening to all of them
 h1, h2, p{
 } */
-
-@media screen and (max-width: 800px) {
-  .article {
-    padding: 2rem 4rem;
-  }
-
-  .article__p {
-    width: 100%;
-  }
-
-  .article__section:not(.top) {
-    width: 100%;
-  }
-}
